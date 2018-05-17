@@ -1,0 +1,15 @@
+<resources>
+
+    <style name="ToolbarBtn">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="MenuPopupAnim">
+        <item name="android:windowEnterAnimation">@anim/menu_popup_enter</item>
+        <item name="android:windowExitAnimation">@anim/menu_popup_exit</item>
+    </style>
+
+</resources>

@@ -1,0 +1,39 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion '25.0.0'
+    defaultConfig {
+        applicationId "com.awp.demo"
+        minSdkVersion 16
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+    }
+
+    aaptOptions {
+        additionalParameters '--extra-packages', 'com.sogou.android.chromium:android.chromium:com.sogou.org.chromium.ui:com.sogou.com.android.webview.chromium:com.sogou.org.chromium.content:com.sogou.org.chromium.components.autofill:com.sogou.org.chromium.components.web_contents_delegate_android'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+
+dependencies {
+    compile(name: 'awp_sdk', ext: 'aar')
+}

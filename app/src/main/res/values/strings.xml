@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AWPDemo</string>
+    <string name="input_url_hint">请输入网址</string>
+    <string name="go">前往</string>
+    <string name="awp_uninitialized">当前为系统WebView</string>
+    <string name="ad_block">广告过滤</string>
+    <string name="debug">调试模式</string>
+    <string name="smart_images">智能无图</string>
+    <string name="error_page">设置错误页面</string>
+    <string name="fast_scroll_thumb">启用快速滑块</string>
+    <string name="night_mode">夜间模式</string>
+</resources>

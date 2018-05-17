@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:layout_alignParentBottom="true"
+        android:background="#F3F3F3"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            style="@style/ToolbarBtn"
+            android:src="@drawable/toolbar_back" />
+
+        <ImageButton
+            android:id="@+id/btn_forward"
+            style="@style/ToolbarBtn"
+            android:src="@drawable/toolbar_forward" />
+
+        <ImageButton
+            android:id="@+id/btn_reload"
+            style="@style/ToolbarBtn"
+            android:src="@drawable/toolbar_reload" />
+
+        <ImageButton
+            android:id="@+id/btn_home"
+            style="@style/ToolbarBtn"
+            android:src="@drawable/toolbar_home" />
+
+        <ImageButton
+            android:id="@+id/btn_menu"
+            style="@style/ToolbarBtn"
+            android:src="@drawable/toolbar_menu" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_toolbar">
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="@dimen/titlebar_height"
+            android:max="100"
+            android:progressDrawable="@drawable/progressbar"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlebar_height"
+        android:background="#F3F3F3"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="6dp">
+
+        <EditText
+            android:id="@+id/et_url"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:hint="@string/input_url_hint"
+            android:imeOptions="actionGo"
+            android:inputType="textUri"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_go"
+            android:layout_width="42dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:background="@null"
+            android:text="@string/go"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

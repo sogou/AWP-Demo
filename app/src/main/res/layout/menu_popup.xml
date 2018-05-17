@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_ad_block"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ad_block" />
+
+    <Button
+        android:id="@+id/btn_webcontent_debug"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/debug" />
+
+    <Button
+        android:id="@+id/btn_smart_images"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/smart_images" />
+
+    <Button
+        android:id="@+id/btn_night_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/night_mode" />
+
+    <Button
+        android:id="@+id/btn_error_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/error_page" />
+
+    <Button
+        android:id="@+id/btn_fast_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/fast_scroll_thumb" />
+</LinearLayout>
