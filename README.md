@@ -58,7 +58,7 @@ Now, you can use many fantasy features of AWP like these:
 
 ### Fantasy features
 
-* **Supports all Android version **
+* Supports all Android version
 * Nothing need to change, only add single line codes
 * Ad Block
 * Night Mode
