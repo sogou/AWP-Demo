@@ -59,12 +59,12 @@ Now, you can use many fantasy features of AWP like these:
 ### Fantasy features
 
 * **Supports all Android version **
-* **Nothing need to change, only add one line **
-* **Ad Block **
-* **Night Mode **
-* **Smart Images loading **
-* **Friendly video playback **
-* **Fast ScrollThumb **
+* Nothing need to change, only add single line codes
+* Ad Block
+* Night Mode
+* Smart Images loading
+* Friendly video playback
+* Fast ScrollThumb
 
 ### AWP Home
 There are also useful examples for Developing apps with the [Android WebView].
