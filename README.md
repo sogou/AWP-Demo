@@ -64,11 +64,11 @@ Now, you can use many fantasy features of AWP like these:
 * Ad Block
 * Night Mode
 
-<img src="https://dlmse.sogoucdn.com/awp/nightmode.gif" width="270" height="480">
+[<img src="https://dlmse.sogoucdn.com/awp/nightmode.gif" width="270" height="480">](https://dlmse.sogoucdn.com/awp/nightmode.gif)
 
 * Smart Images loading
 
-<img src="https://dlmse.sogoucdn.com/awp/smartimage.gif" width="270" height="480">
+[<img src="https://dlmse.sogoucdn.com/awp/smartimage.gif" width="270" height="480">](https://dlmse.sogoucdn.com/awp/smartimage.gif)
 
 * Fast ScrollThumb
 
