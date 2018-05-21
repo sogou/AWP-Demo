@@ -72,7 +72,7 @@ Now, you can use many fantasy features of AWP like these:
 
 * Fast ScrollThumb
 
-<img src="https://dlmse.sogoucdn.com/awp/fastscrollthumb.gif" width="270" height="480">
+[<img src="https://dlmse.sogoucdn.com/awp/fastscrollthumb.gif" width="270" height="480">](https://dlmse.sogoucdn.com/awp/fastscrollthumb.gif)
 
 * Error Page
 
