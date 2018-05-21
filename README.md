@@ -60,11 +60,19 @@ Now, you can use many fantasy features of AWP like these:
 
 * Supports all Android version
 * Nothing need to change, only add single line codes
+* Friendly video playback
 * Ad Block
 * Night Mode
+[<img src="https://dlmse.sogoucdn.com/awp/nightmode.gif" width="270" height="480">]
 * Smart Images loading
-* Friendly video playback
+[<img src="https://dlmse.sogoucdn.com/awp/smartimage.gif" width="270" height="480">]
 * Fast ScrollThumb
+[<img src="https://dlmse.sogoucdn.com/awp/fastscrollthumb.gif" width="270" height="480">]
+* Error Page
+[<img src="https://dlmse.sogoucdn.com/awp/errorpage.gif" width="270" height="480">]
+* Selection Menu
+[<img src="https://dlmse.sogoucdn.com/awp/selectmenu_page.gif" width="270" height="480" align="left">]
+[<img src="https://dlmse.sogoucdn.com/awp/selectmenu_edited.gif" width="270" height="480">]
 
 ### AWP Home
 There are also useful examples for Developing apps with the [Android WebView].
