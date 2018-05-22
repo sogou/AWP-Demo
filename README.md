@@ -84,8 +84,10 @@ Now, you can use many fantasy features of AWP like these:
 <img src="https://dlmse.sogoucdn.com/awp/selectmenu_edited.gif" width="270" height="480">
 
 ### AWP Home
-There are also useful examples for Developing apps with the [Android WebView].
 If you have any problem or suggestion, please let me know [AWP Home].
+
+There are also useful examples for Developing apps with the [Android WebView].
+
 
 [AWP Home]: http://awp.mse.sogou.com/
 [Android WebView]: https://github.com/googlearchive/chromium-webview-samples
