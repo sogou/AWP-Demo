@@ -89,6 +89,6 @@ If you have any problem or suggestion, please let me know [AWP Home].
 
 There are also useful examples for Developing apps with the [Android WebView].
 
-[AWP Demo]: https://dlmse.sogoucdn.com/awp/AWPDemo.apk
+[AWP Demo]: https://dlmse.sogoucdn.com/awp/AWPDemo_1.0.apk
 [AWP Home]: http://awp.mse.sogou.com/
 [Android WebView]: https://github.com/googlearchive/chromium-webview-samples
