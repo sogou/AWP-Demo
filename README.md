@@ -62,6 +62,7 @@ Now, you can use many fantasy features of AWP like these:
 * Nothing need to change, only add single line codes
 * Friendly video playback
 * Ad Block
+* Password save
 * Night Mode
 
 [<img src="https://dlmse.sogoucdn.com/awp/nightmode_slim.gif" width="270" height="480">](https://dlmse.sogoucdn.com/awp/nightmode_slim.gif)
