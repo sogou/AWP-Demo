@@ -10,11 +10,6 @@ and add below codes to your build.gradle.
 
         android {
 
-            aaptOptions {
-
-                additionalParameters '--extra-packages', 'com.sogou.android.chromium:com.sogou.org.chromium.ui:com.sogou.com.android.webview.chromium:com.sogou.org.chromium.content:com.sogou.org.chromium.components.autofill:com.sogou.org.chromium.components.web_contents_delegate_android'
-            }
-
             repositories {
                 flatDir {
                     dirs 'libs'
