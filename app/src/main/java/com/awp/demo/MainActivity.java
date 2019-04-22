@@ -14,6 +14,7 @@ import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
+import android.webkit.CookieManager;
 import android.webkit.DownloadListener;
 import android.webkit.GeolocationPermissions;
 import android.webkit.SslErrorHandler;
@@ -110,6 +111,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         }
         if (meetApiRequirement(Build.VERSION_CODES.L)) {
             webSettings.setMixedContentMode(WebSettings.MIXED_CONTENT_ALWAYS_ALLOW);
+            CookieManager.getInstance().setAcceptThirdPartyCookies(mWebView, true);
         }
         mWebView.setWebViewClient(new WebViewClient() {
             @Override
