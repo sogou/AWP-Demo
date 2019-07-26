@@ -6,12 +6,15 @@ package com.awp.demo;
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.text.TextUtils;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.PopupWindow;
+import android.widget.TextView;
 
 class MenuPopupWindow extends PopupWindow implements View.OnClickListener {
 
@@ -25,6 +28,10 @@ class MenuPopupWindow extends PopupWindow implements View.OnClickListener {
     private Button mBtnNightMode;
     private Button mBtnCustonErrorPage;
     private Button mBtnFastScrollThumb;
+    private Button mBtnSetProxyOverride;
+    private Button mBtnClearProxyOverride;
+    private TextView mCoreVersion;
+    private EditText mProxy;
 
     MenuPopupWindow(MainActivity activity) {
         super(activity);
@@ -40,18 +47,24 @@ class MenuPopupWindow extends PopupWindow implements View.OnClickListener {
         setFocusable(true);
         setAnimationStyle(R.style.MenuPopupAnim);
         setBackgroundDrawable(new ColorDrawable(0xFFFFFFFF));
-        mBtnAdBlock = (Button) contentView.findViewById(R.id.btn_ad_block);
+        mBtnAdBlock = (Button) contentView.findViewById(R.id.btn_ad_filter);
         mBtnWebContentsDebug = (Button) contentView.findViewById(R.id.btn_webcontent_debug);
         mBtnSmartImages = (Button) contentView.findViewById(R.id.btn_smart_images);
         mBtnNightMode = (Button) contentView.findViewById(R.id.btn_night_mode);
         mBtnCustonErrorPage = (Button) contentView.findViewById(R.id.btn_error_page);
         mBtnFastScrollThumb = (Button) contentView.findViewById(R.id.btn_fast_scroll);
+        mBtnSetProxyOverride = (Button) contentView.findViewById(R.id.btn_proxy_ok);
+        mBtnClearProxyOverride = (Button) contentView.findViewById(R.id.btn_proxy_clear);
+        mProxy = (EditText) contentView.findViewById(R.id.proxy_override);
         mBtnAdBlock.setOnClickListener(this);
         mBtnWebContentsDebug.setOnClickListener(this);
         mBtnSmartImages.setOnClickListener(this);
         mBtnNightMode.setOnClickListener(this);
         mBtnCustonErrorPage.setOnClickListener(this);
         mBtnFastScrollThumb.setOnClickListener(this);
+        mBtnSetProxyOverride.setOnClickListener(this);
+        mBtnClearProxyOverride.setOnClickListener(this);
+        mCoreVersion = (TextView) contentView.findViewById(R.id.core_version);
         initBtnsColor();
     }
 
@@ -62,7 +75,7 @@ class MenuPopupWindow extends PopupWindow implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.btn_ad_block:
+            case R.id.btn_ad_filter:
                 if (mActivity.isAdBlockEnabled()) {
                     mBtnAdBlock.setTextColor(DISABLE_COLOR);
                 } else {
@@ -116,6 +129,16 @@ class MenuPopupWindow extends PopupWindow implements View.OnClickListener {
                 mActivity.setFastScrollThumb();
                 dismiss();
                 break;
+            case R.id.btn_proxy_ok:
+                mProxy.clearFocus();
+                mActivity.setProxyOverride(mProxy.getText().toString());
+                dismiss();
+                break;
+            case R.id.btn_proxy_clear:
+                mProxy.clearFocus();
+                mActivity.clearProxyOverride();
+                dismiss();
+                break;
             default:
                 break;
         }
@@ -152,6 +175,12 @@ class MenuPopupWindow extends PopupWindow implements View.OnClickListener {
         } else {
             mBtnFastScrollThumb.setTextColor(DISABLE_COLOR);
         }
+        String proxy =
+            (String) SharedPrefsUtils.getInstance().get(SharedPrefsUtils.PROXY, "");
+        if (!TextUtils.isEmpty(proxy)) {
+            mProxy.setText(proxy);
+        }
+        mCoreVersion.setText(mActivity.getAwpCoreVersion());
     }
 
 }

@@ -9,4 +9,7 @@
     <string name="error_page">设置错误页面</string>
     <string name="fast_scroll_thumb">启用快速滑块</string>
     <string name="night_mode">夜间模式</string>
+    <string name="set_proxy">设置代理</string>
+    <string name="ok">确定</string>
+    <string name="clear">清除</string>
 </resources>

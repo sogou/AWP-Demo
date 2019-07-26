@@ -53,6 +53,7 @@ Now, you can use many fantasy features of AWP like these:
 
 ### Fantasy features
 
+* Support Proxy Override
 * Supports all Android version
 * Nothing need to change, only add single line codes
 * Friendly video playback

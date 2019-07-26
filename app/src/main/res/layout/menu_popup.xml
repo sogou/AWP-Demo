@@ -4,8 +4,19 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <TextView
+        android:id="@+id/core_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:text="AWP Core:"/>
+
     <Button
-        android:id="@+id/btn_ad_block"
+        android:id="@+id/btn_ad_filter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/ad_block" />
@@ -39,4 +50,36 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/fast_scroll_thumb" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/set_proxy" />
+
+        <EditText
+            android:id="@+id/proxy_override"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="http://127.0.0.1:8888" />
+
+        <Button
+            android:id="@+id/btn_proxy_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/ok" />
+
+        <Button
+            android:id="@+id/btn_proxy_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/clear" />
+    </LinearLayout>
+
 </LinearLayout>

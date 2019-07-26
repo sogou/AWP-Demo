@@ -13,6 +13,7 @@ public class AWPApplication extends Application {
     public void onCreate() {
         super.onCreate();
         AwpEnvironment.init(this, false);
+        SharedPrefsUtils.initialize(this);
     }
 
 }
